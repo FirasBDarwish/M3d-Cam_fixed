@@ -114,7 +114,7 @@ class Evaluator():
             unique_class_labels = pd.unique(_scores[&#39;class_label&#39;])
             for unique_class_label in unique_class_labels:
                 __scores = _scores[_scores[&#39;class_label&#39;] == unique_class_label]
-                mean_score = __scores[&#39;evaluation&#39;].to_numpy().astype(np.float)
+                mean_score = __scores[&#39;evaluation&#39;].to_numpy().astype(float)
                 mean_score = mean_score[~np.isnan(mean_score)]
                 mean_score = np.mean(mean_score)
                 mean_score_list.append(mean_score)
@@ -283,7 +283,7 @@ class Evaluator():
             unique_class_labels = pd.unique(_scores[&#39;class_label&#39;])
             for unique_class_label in unique_class_labels:
                 __scores = _scores[_scores[&#39;class_label&#39;] == unique_class_label]
-                mean_score = __scores[&#39;evaluation&#39;].to_numpy().astype(np.float)
+                mean_score = __scores[&#39;evaluation&#39;].to_numpy().astype(float)
                 mean_score = mean_score[~np.isnan(mean_score)]
                 mean_score = np.mean(mean_score)
                 mean_score_list.append(mean_score)

@@ -12,9 +12,9 @@ class MyInstall(install):
 
 setuptools.setup(
     name="medcam",
-    version="0.1.21",
-    author="Karol Gotkowski",
-    author_email="KarolGotkowski@gmx.de",
+    version="0.1.0",
+    author="Karol Gotkowski (edited by Firas Darwish)",
+    author_email="KarolGotkowski@gmx.de (edited by fbd2014@nyu.edu)",
     description="An easy to use library that makes model predictions more interpretable for humans.",
     long_description="An easy to use library that makes model predictions more interpretable for humans. M3d-CAM allows the generation of attention maps with multiple methods like Guided Backpropagation, Grad-Cam, Guided Grad-Cam and Grad-Cam++.",
     long_description_content_type="text/markdown",
